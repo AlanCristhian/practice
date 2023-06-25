@@ -1,2 +1,259 @@
 <!DOCTYPE html>
-<head lang="es-AR">
+<html lang="es-AR">
+<head>
+    <meta charset="utf-8">
+    <meta name="autor" content="alan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="http://localhost/">
+    <title>page title</title>
+    <meta name="description" content="page description">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="144x144">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style></style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <p>paragraph</p>
+    <p><em>emphasis</em></p>
+    <p><strong>strong emphasis</strong></p>
+    <p><i>italic</i><b>bold</b><u>underline</u><s>tachado</s></p>
+    <p><del>baca</<del><ins>vaca</ins></p>
+    <p><mark>highlighted text</mark></p>
+    <p><dfn>definition</dfn></p>
+    <p><span>undefined inline tag</span></p>
+    <p>&amp;&quot;&apos;&lt;&gt;</p>
+    <p><a href="source" title="description">link</a></p>
+    <p><a href="download address" title="download a pdf file" download="default-file-name.pdf">Download report (2MB, PDF)</a></p>
+    <p><small>smal text</small></p>
+    <p>Press <kdb>F5</kdb> to reload.</p>
+    <p>H<sub>2</sub>O = x<sup>2</sup></p>
+    <p><time datetime="2022-09-21T14:38:03.300-3:53">Current time in argentina</time></p>
+    <p><address>gualeguaychÃº 941</address></p>
+    <p>line break <br></p>
+    <p>horizontal line <hr></p>
+    <p>oportunity line break <wbr></p>
+    <p><abbr title="alan ruiz">ar</p>
+
+    <h1>Main title</h1>
+    <h2>unsorted list</h2>
+    <ul>
+        <li>milk</li>
+    </ul>
+    <h3>ordered list</h3>
+    <ol>
+        <li>eggs</li>
+    </ol>
+    <h4>definition list</h4>
+    <dl>
+        <dt>term 1</dt>
+        <dl>definition 1</dl>
+        <dl>definition 2</dl>
+    </dl>
+    <h5>quotation</h5>
+    <cite><a>quoation source</a></cite>
+    <blockquote>the quotation</blockquote>
+    <p><q>inline quotation</q></p>
+    <h6>Source code</h6>
+    <code><pre>
+    <var>variable</var> = "program output"
+    print(variable)
+    </pre></code>
+    <samp>program output</samp>
+
+    <nav></nav>
+    <header></header>
+    <main>
+        <article>
+            <section></section>
+        </article>
+        <aside></aside>
+    </main>
+    <footer></footer>
+    <div>undefined block tag</div>
+
+    <table>
+        <caption>title</caption>
+        <colgroup>
+            <col>
+            <col colspan="1" style="text:red">
+            <col colspan="2" style="text:blue">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>no color</th>
+                <td>red</td>
+                <td>blue 1</td>
+                <td>blue 2</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" rowspan="2">animals</th>
+                <td colspan="2">cat</td>
+            </tr>
+            <tr>
+                <td colspan="2">dog</td>
+            </tr>
+            <tr>
+                <td>
+                    <table></table>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>foot 1</td>
+                <td>foot 2</td>
+                <td>foot 3</td>
+                <td>foot 4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <form action="action.py" autocomplete="on,off" method="post,get" enctype="multipar/form-data,text/plain">
+        <label for="type">
+            button
+            checkbox
+            color
+            date
+            datetime-local
+            email
+            file
+            hidden
+            image
+            month
+            number
+            password
+            radio
+            range
+            reset
+            search
+            submit
+            tel
+            text
+            time
+            url
+            week
+        </label>
+        <input name="type">
+        <label for="attributes">
+            checked
+            disabled
+            max
+            maxlength
+            min
+            minlength
+            name
+            pattern
+            readonly
+            required
+            step
+            size
+            type
+            value
+        </label>
+        <input name="attributes">
+        <datalist id="ice-cream">
+            <option value="chocolate">
+            <option value="coconut">
+        </datalist>
+        <dialog>
+            <p>what you want to do?</p>
+            <form method="dialog">
+                <button>close the app</button>
+            </form>
+            <output>result</output>
+        </dialog>
+        <fieldset>
+            <legend>sourrounding content</legend>
+            <label for="option-1">option 1</label>
+            <input name="option-1">
+            <label for="option-2">option 2</label>
+            <input name="option-2">
+        </fieldset>
+        <menu>
+            <li><data value="132">milk</data></li>
+            <li><data value="123">eggs</data></li>
+        </menu>
+        <select>
+            <optgroup label="warm">
+                <option>red</option>
+                <option>orange</option>
+            </optgroup>
+            <optgroup label="cold">
+                <option>blue</option>
+                <option>cyan</option>
+            </optgroup>
+        </select>
+        <label for="big-text">explanation</label>
+        <textarea name="big-text" rows="25" cols="80"></textarea>
+    </form>
+
+    <audio loop muted controls preload="auto,metadata,none">
+        <source src="audio.mp3" type="audio/mp3">
+        <source src="audio.ogg" type="audio/ogg">
+        <p><a>fallback</a></p>
+    </audio>
+    <details>
+        <summary>spoiler</summary>
+        the queen is dead
+    </details>
+    <figure>
+        <picture>
+            <source media="(min-width:200)" srcset="catsmall.jpg">
+            <source media="(min-width:400)" srcset="catlarge.jpg">
+            <img src="catdefault.jpg" width="300" height="300" alt="description" loading="lazy">
+        </picture>
+        <figcaption>image description</figcaption>
+    </figure>
+    <iframe id="outher" width="300" height="300" title="description" src="source">
+    <map id="info">
+        <area shape="circle" coords="1,2,3">
+        <area shape="rectangle" coords="1,2,3,4">
+        <area shape="polygon" coords="1,2,3,4,5,6">
+        <area shape="default" coords="">
+    </map>
+    <img usermap="#info">
+    <meter value="5" min="0" max="10">50%</meter>
+    <noscript>no script allowed inside</noscript>
+    <object data="file.pdf" type="application/pdf" usermap="#info" form="form-id">
+    <progress value="100" max="200">50%</progress>
+    <template><slot></template>
+    <video loop controls muted poster="poster.png" preload="auto,metadata,none">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <track default src="track.vtt" srclang="es-AR" label="EspaÃ±ol AR" kind="caption,chapter,description,metadata,subtitle">
+        <p><a>fallback</a></p>
+    </video>
+
+    <p
+        accesskey="f5"
+        autocapitalize="on,off,none,characters,words,sentences"
+        autofocus
+        class="global-attributes"
+        contenteditable="true,false"
+        data-*="value"
+        dir="ltr,rtl,auto"
+        draggable="true,false"
+        enterkeyhint="go"
+        hidden
+        id="identifier"
+        inputmode="numeric,decimal,tel,text,search,url,email,none"
+        is="custom-element"
+        itemid="unique-id"
+        itemprop="custom-property"
+        itemref="id1 id2"
+        itemscope
+        itemtype="vocabulary address"
+        lang="es-AR"
+        nonce="{{criptographic_value}}"
+        part="tab"
+        slot="my-field"
+        spellcheck="true,false"
+        style="text:red"
+        tabindex="0"
+        title="description"
+        translate="yes,no"
+    >global attributes</p>
+</body>
+</html>

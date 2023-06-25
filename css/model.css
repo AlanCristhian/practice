@@ -1,0 +1,278 @@
+/* basic selectors */
+*  /* all elements */
+e  /* all <e> tags */
+e[attr]  /* tag with an attr attribute */
+e[attr="val"]  /* exactly equal to "val" */
+e[attr~="val"]  /* one of the whitespace separated values is "val" */
+e[attr|="val"]  /* attr="val" or attr="val-" */
+e[attr^="val"]  /* starts with "val" */
+e[attr$="val"]  /* ends with "val" */
+e[attr*="val"]  /* contains the string "val" */
+e[attribute operator value i|I]  /* case insensitive */
+e[attribute operator value s|S]  /* case sensitive */
+.class  /* class selector */
+#id  /* id selector */
+
+/* Combitanios */
+img + a  /* <img><a> --> a */
+p > a /* <p><a></p> --> a */
+div a  /* <div><p><a></p></div> --> a */
+img ~ a  /* <img><br><a> --> a */
+h1, h2   /* list selector */
+:is(h1, h2)  /* more specific than list */
+:where(h1, h2)  /* less specific than list */
+
+/* Pseudo classes */
+:active /* user interacted */
+:any-link /* has href */
+:autofill /* filled by browser */
+:checked /* manually checked */
+:current /* presently visible on WebVTT */
+:default /* has the checked attribute */
+:defined /* dinamically defined */
+:disabled /* has the disabled attribute */
+:dir([ltr,rtl]) /* has that direction */
+:empty /* has no text or childs */
+:enabled /* can interact */
+@page:first /* @page:first */
+:first-child /* first sibling */
+:first-of-type /* first sibling of type */
+:focus /* get focues */
+:focus-visible /* get focus and is visible */
+:focus-within /* element or one of his childrens get focus */
+:fullscreen /* element is in fullscren */
+div:has(+p) /* <div><p></p></div> -> <p> */
+:host /* shadow dom */
+:host-context(selector) /* selector inside shadow dom */
+:hover /* mouse hover */
+:indeterminate /* has the indeterminate attribute */
+:invalid /* failed to validate */
+:in-range /* is inside range */
+:lang(es-AR) /* has that language */
+:last-child /* last sibling */
+:last-of-type /* last sibling of type */
+@page:left /* @page:left */
+:link /* unvisited link */
+:local-link /* current page link */
+:modal /* element that disables all others elements interactions */
+:not(selector) /* element that is not selector */
+:nth-child(An + B)
+:nth-col(An + B)
+:nth-of-type(An + B)
+:nth-last-child(An + B)
+:nth-last-col(An + B)
+:nth-last-of-type(An + B)
+:only-child /* has no siblings */
+:only-of-type /* has no siblings of that type */
+:optional /* has no required attribute */
+:out-of-range /* value is outside range */
+:paused /* element is paused */
+:placeholder-shown /* is displaying a placeholder text */
+:playing /* element is playing */
+:picture-in-picture /* is in in-picture mode */
+:required /* has the required attribute */
+:read-only /* can't edit it */
+:read-write /* can edit it */
+@page:right /* @page:right */
+:root /* more specificity than <html> */
+:scope /* element that is using the DOM API */
+:target /* element that is target of other element in href attribute by id */
+:user-invalid /* invalidated after user interacted */
+:user-valid /* validated after user interacted */
+:valid /* valid value */
+:visited /* link visited */
+
+/* Pseudoelements */
+::after /* appends a pseudoelement that is the last child */
+::backdrop /* a box sourroundign popover, modal and fullscreen */
+::before /* appends a pseudoelement that is the first child */
+::cue /* selects some kind of WebVTT */
+::file-selector-button /* <input type="file"> button */
+::first-letter /* first letter of a block element */
+::first-line /* first line of a block element */
+::marker /* the marker of a <li> or <summary> */
+::part(val) /* a shadow element that has val in his part attribute */
+::placeholder /* the placeholder of an <input> or <textarea> */
+::selection /* the mouse selection style */
+::slotted /* dinamically placed into a slot inside a template *
+
+/* At-rules */
+@charset
+@font-face
+@font-palette-values
+@import
+@keyframes
+@layer
+@media all|screen|page (
+    any-hover
+    any-pointer
+    aspect-ratio
+    color
+    color-gamut
+    color-index
+    display-mode
+    dynamic-range
+    forced-colors
+    grid
+    height
+    hover
+    inverted-colors
+    monochrome
+    orientation
+    overflow-block
+    overflow-inline
+    pointer
+    prefers-color-scheme
+    prefers-contrast
+    prefers-reduced-movement
+    resolution
+    scripting
+    update
+    video-dynamic-range
+    width
+)
+@namespace
+@supports
+
+/* Functions */
+acos()
+asin()
+atan()
+atan2()
+attr()
+calc()
+clamp()
+cos()
+counter()
+counters()
+cross-fade()
+env()
+exp()
+fit-content()
+hypot()
+log()
+max()
+min()
+minmax()
+path()
+pow()
+repeat()
+sin()
+sqrt()
+tan()
+url()
+var()
+
+/* Types */
+<alpha-value>  <number>|<percentage>
+<angle>
+<angle-percentage>
+<basic-shape> inset circle ellipse polygon path
+<blend-mode> (
+    color
+    color-burn
+    color-dodge
+    darken
+    difference
+    exclusion
+    hard-light
+    hue
+    lighten
+    luminosity
+    multiply
+    normal
+    overlay
+    saturation
+    screen
+    soft-light
+)
+<calc-constant> e pi NaN -infinity infinity
+<calc-sum> + -
+<color> rgb hsl hwb
+<custom-ident>
+<dashed-ident>
+<dimension> (
+ch
+cm
+cqh
+cqw
+cqi
+cqb
+cqmax
+cqmin
+dvh
+dvw
+dvi
+dvb
+dvmin
+dvmax
+em
+ex
+in
+lvh
+lvw
+lvi
+lvb
+lvmin
+lvmax
+mm
+pc
+pt
+px
+rem
+svh
+svw
+svi
+svb
+svmin
+svmax
+vh
+vw
+vi
+vb
+vmin
+vmax
+)
+<display-box> contens none
+<display-inside> (
+    flex
+    flow-root
+    grid
+    table
+    table-cell
+    table-column
+    table-column-group
+    table-footer-group
+    table-header-group
+    table-row
+    table-row-group
+)
+<display-internal>
+<display-legacy>
+<display-listitem>
+<display-outside>
+<easing-function>
+<filter-function>
+<flex>
+<frequency>
+<frequency-percentage>
+<gradient>
+<hex-color>
+<hue>
+<ident>
+<image>
+<integer>
+<length>
+<length-percentage>
+<named-color>
+<number>
+<overflow>
+<percentage>
+<position>
+<ratio>
+<resolution>
+<string>
+<system-color>
+<time>
+<time-percentage>
+<transform-function>
